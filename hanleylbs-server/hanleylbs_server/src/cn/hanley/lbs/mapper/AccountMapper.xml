@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?> 
+<!DOCTYPE mapper 
+    PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+    "http://mybatis.org/dtd/mybatis-3-mapper.dtd"> 
+  
+<mapper namespace="cn.hanley.lbs.mapper.AccountMapper"> 
+    <insert id="insertAccount" parameterType="cn.hanley.lbs.model.Account"> 
+       insert into account(username,password) values(#{username},#{password},#{userid}) 
+    </insert> 
+    
+    <select id="getAccount" resultType="int" parameterType="cn.hanley.lbs.model.Account"> 
+        select userid from account where username=#{username} and password=#{password}
+    </select>     
+  
+    
+
+    
+    <!-- 当使用该Mybatis与Spring整合的时候，该文件必须和相应的Mapper接口文件同名，并在同一路径下 --> 
+</mapper> 
