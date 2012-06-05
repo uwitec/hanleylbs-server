@@ -12,8 +12,8 @@ public class UserServiceTest{
 	
 	@Test
 	public void testMybatis(){
-		ClassPathXmlApplicationContext bf = new ClassPathXmlApplicationContext("applicationContext.xml");
-		UserMapper userMapper = bf.getBean(UserMapper.class);
+//		ClassPathXmlApplicationContext bf = new ClassPathXmlApplicationContext("applicationContext.xml");
+//		UserMapper userMapper = bf.getBean(UserMapper.class);
 		
 //		User user = new User();
 //		user.setPassword("lqy@9r943");
