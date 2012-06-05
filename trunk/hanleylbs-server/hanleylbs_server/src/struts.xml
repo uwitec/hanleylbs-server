@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC
+    "-//Apache Software Foundation//DTD Struts Configuration 2.0//EN"
+    "http://struts.apache.org/dtds/struts-2.0.dtd">
+
+<struts>
+	<package name="default" namespace="/" extends="json-default">
+		<action name="login" class="cn.hanley.lbs.action.LoginAction">
+			<result name="user" type="json">
+			</result>
+		</action>
+		<action name="queryAllUser" class="cn.hanley.lbs.action.QueryAction">
+		    <result name="userList" type="json"/>
+		</action>
+		<action name="chatSend" class="cn.hanley.lbs.action.ChatAction" method="send">
+		   
+		</action>
+		<action name="chatReceive" class="cn.hanley.lbs.action.ChatAction" method="receive">
+		    
+		</action>
+	</package>
+	
+	
+</struts>
