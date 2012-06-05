@@ -4,11 +4,8 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
-import org.apache.struts2.ServletActionContext;
-import org.apache.struts2.interceptor.ServletResponseAware;
 import org.apache.struts2.json.annotations.JSON;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.context.ServletContextAware;
 
 import cn.hanley.lbs.model.User;
 import cn.hanley.lbs.service.LoginService;

@@ -1,7 +1,6 @@
 package cn.hanley.lbs.action;
 
 import java.io.Serializable;
-import java.util.Map;
 
 import javax.annotation.Resource;
 
